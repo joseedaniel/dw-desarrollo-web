@@ -43,22 +43,51 @@
     <table width="85%" border="0" align="center" cellpadding="30px">
         <tr>
             <td>
-                <h1>¿Cómo empezó todo?</h1>
-                <p align="justify">
-                    La historia de las matemáticas es un campo de investigación que se enfoca en los orígenes de los
-                    descubrimientos matemáticos, la evolución de sus métodos y conceptos, y, en cierta medida, en las
-                    figuras de los matemáticos que contribuyeron a su desarrollo. El origen de las matemáticas en la
-                    historia de la humanidad está íntimamente ligado a la aparición del concepto de <b>número</b>, un
-                    proceso que
-                    se dio de manera gradual en las sociedades primitivas. Estas comunidades tenían cierta habilidad
-                    para
-                    estimar cantidades y magnitudes, pero inicialmente carecían de una noción clara de número. Por ello,
-                    más
-                    allá de dos o tres, no existían nombres específicos para los números, y utilizaban términos
-                    similares a
-                    "muchos" para referirse a cantidades mayores.</p><br>
-                <img src="Images/Compendio.jpg" height="300px"><br>
-                Página del Compendio
+                <h2>Futuro de las Matemáticas</h2>
+                <p>Las matemáticas seguirán siendo fundamentales en el desarrollo de la ciencia y la tecnología. Con la
+                    inteligencia artificial, la computación cuántica y los avances en modelado matemático, su impacto
+                    será aún mayor en el futuro.</p>
+
+                <h3>Tendencias en Matemáticas</h3>
+                <ul>
+                    <li><b>Inteligencia Artificial:</b> Modelos matemáticos avanzados impulsan el aprendizaje automático
+                        y la toma de decisiones automatizada.</li>
+                    <li><b>Computación Cuántica:</b> Algoritmos matemáticos permitirán resolver problemas imposibles
+                        para las computadoras clásicas.</li>
+                    <li><b>Criptografía Post-Cuántica:</b> Desarrollo de nuevos métodos de seguridad basados en
+                        problemas matemáticos más complejos.</li>
+                    <li><b>Matemáticas en Biomedicina:</b> Modelos matemáticos ayudarán a predecir enfermedades y
+                        optimizar tratamientos.</li>
+                    <li><b>Big Data y Estadística:</b> La matemática será clave en el análisis masivo de datos para la
+                        toma de decisiones en múltiples industrias.</li>
+                </ul>
+
+                <h3>Ejemplo de Aplicación: Modelado de Epidemias</h3>
+                <p>Uno de los avances recientes es el uso de ecuaciones diferenciales para predecir la propagación de
+                    enfermedades.</p>
+                <pre>
+        <code>
+# Modelo SIR en Python
+from scipy.integrate import odeint
+import numpy as np
+
+def modelo_SIR(y, t, beta, gamma):
+    S, I, R = y
+    dSdt = -beta * S * I
+    dIdt = beta * S * I - gamma * I
+    dRdt = gamma * I
+    return [dSdt, dIdt, dRdt]
+
+t = np.linspace(0, 160, 160)
+sol = odeint(modelo_SIR, [0.99, 0.01, 0], t, args=(0.3, 0.1))
+
+print("Simulación completada")
+        </code>
+    </pre>
+
+                <h3>El Papel de los Matemáticos en el Futuro</h3>
+                <p>El futuro necesitará más matemáticos en diversas áreas, desde la ciberseguridad hasta la exploración
+                    espacial. Las matemáticas seguirán evolucionando junto con la tecnología.</p>
             </td>
             <td width="30%" bgcolor="white" valign="top">
                 <b>Temas Relacionados</b>
